@@ -1,6 +1,6 @@
-# AudioAppAPI
+# Audio-Analyzer
 
-**AudioAppAPI** is a web application that allows users to upload audio files, extract relevant audio features, perform speaker diarization, transcription, and interact with a chatbot for queries and text summarization. It is built using **Flask** for the backend and **React** for the frontend.
+**Audio-Analyzer** is a web application that allows users to upload audio files, extract relevant audio features, perform speaker diarization, transcription, and interact with a chatbot for queries and text summarization. It is built using **Flask** for the backend and **React** for the frontend.
 
 ---
 
@@ -19,7 +19,7 @@
 
 Below is the architecture flow of the **AudioAppAPI** project, showing how the components interact and function.
 
-![AudioAppAPI Architecture](audio.png)
+![AudioAppAPI Architecture](audio.jpg)
 
 ---
 
