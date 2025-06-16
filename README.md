@@ -15,6 +15,14 @@
 
 ---
 
+## Architecture Flow
+
+Below is the architecture flow of the **AudioAppAPI** project, showing how the components interact and function.
+
+![AudioAppAPI Architecture](audio.png)
+
+---
+
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
@@ -59,5 +67,5 @@
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/AudioAppAPI.git
-cd AudioAppAPI
+git clone https://github.com/Noor-Fatima-Afzal/audio-analyzer.git
+cd audio-analyzer
