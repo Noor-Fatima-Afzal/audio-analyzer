@@ -1,0 +1,197 @@
+/* Global Styles */
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Container for the entire homepage */
+.homepage-container {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Content Layout */
+.homepage-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px; /* Reduced padding on larger screens */
+  flex-wrap: wrap;
+}
+
+/* Text Section */
+.text-section {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.text-section h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #2c2c4d;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.text-section .highlight {
+  color: #6c63ff;
+  font-weight: 700;
+}
+
+.text-section p {
+  font-size: 1.125em;
+  color: #555;
+  margin: 20px 0;
+  margin-bottom: 2em;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Call to Action Button */
+.cta-button {
+  background-color: #6c63ff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4e4abe;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.features p {
+  margin: 5px 0;
+}
+
+/* Image Section */
+.image-section {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  text-align: right;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btns {
+display: flex;
+gap: 1em;
+}
+
+/* Chat Button */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.chat-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .homepage-content {
+    padding: 30px; /* Further reduce padding for medium screens */
+  }
+  
+  .text-section h1 {
+    font-size: 2.2em;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .image-section {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-content {
+    flex-direction: column;
+    padding: 30px; /* Keep padding moderate on smaller screens */
+  }
+
+  .text-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image-section {
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .text-section h1 {
+    font-size: 2em;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section h1 {
+    font-size: 1.8em;
+  }
+
+  .text-section p {
+    font-size: 1em;
+    margin-bottom: 3em;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .homepage-content {
+    padding: 20px; /* Consistent padding for small screens */
+  }
+}

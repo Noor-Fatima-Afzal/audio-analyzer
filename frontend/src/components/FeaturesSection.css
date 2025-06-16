@@ -1,0 +1,79 @@
+/* Features Section */
+.features-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff; /* Set background of the section to white */
+}
+
+.features-section h2 {
+  font-size: 2em;
+}
+
+/* Container for Feature Cards */
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; 
+  
+}
+
+/* Individual Feature Card */
+.feature-card {
+  background-color: #f7f7f7; /* Set background of each feature card to grey */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px; /* Margin around each card for spacing */
+  transition: transform 0.2s;
+}
+
+/* Hover Effect for Feature Card */
+.feature-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Feature Title Styles */
+.feature-card h3 {
+  color: #6c63ff; /* Feature title color */
+  margin: 15px 0; /* Add margin for spacing */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Feature Button Styles */
+.feature-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+/* Hover Effect for Feature Button */
+.feature-button:hover {
+  background-color: #5a52e2; /* Darker shade on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .feature-card {
+    width: 90%; /* Make cards full width on small screens */
+    max-width: 300px; /* Limit the max width for larger phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .features-section {
+    padding: 20px 10px; /* Reduce padding for small screens */
+  }
+
+  .feature-card {
+    margin: 10px; /* Reduce margin for small screens */
+  }
+
+  .feature-button {
+    padding: 8px 12px; /* Adjust button padding for smaller screens */
+  }
+}

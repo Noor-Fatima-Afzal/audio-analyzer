@@ -1,0 +1,162 @@
+/* General Page Styling */
+.signin-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* Soft neutral background */
+  padding: 20px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Title Styling */
+.signin-page h1 {
+  font-size: 2.5rem;
+  color: #2c2c4d; /* Elegant dark color for the heading */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Form Container Styling */
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #6c63ff; /* Subtle purple on focus */
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.3); /* Purple glow effect */
+  outline: none;
+}
+
+/* Sign In Button Styling */
+.signin-button {
+  width: 100%;
+  background-color: #6c63ff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signin-button:hover {
+  background-color: #5549d0; /* Darker purple on hover */
+  transform: translateY(-2px); /* Subtle lift on hover */
+  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2); /* Slight shadow */
+}
+
+/* Message Styling */
+.signin-page p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* OAuth Buttons (Horizontal Alignment) */
+.oauth-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between; /* Even spacing between buttons */
+  gap: 20px;
+}
+
+.google-signin-button, .github-signin-button {
+  flex: 1; /* Makes both buttons take equal space */
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.google-signin-button {
+  background-color: #4285F4;
+  color: white;
+  min-width: max-content;
+}
+
+.google-signin-button:hover {
+  background-color: #357ae8; /* Slightly darker on hover */
+  transform: translateY(-2px);
+}
+
+.github-signin-button {
+  background-color: #333;
+  color: white;
+}
+
+.github-signin-button:hover {
+  background-color: #24292e; /* Slightly darker GitHub color */
+  transform: translateY(-2px);
+}
+
+/* Button Focus Effects */
+.signin-button:focus,
+.google-signin-button:focus,
+.github-signin-button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4); /* Consistent button glow on focus */
+}
+
+/* Alignment and Responsiveness */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  .signin-page h1 {
+    font-size: 2rem;
+  }
+
+  .oauth-buttons {
+    flex-direction: column; /* Stacks buttons on smaller screens */
+  }
+
+  .signin-button,
+  .oauth-buttons {
+    max-width: 100%;
+  }
+}

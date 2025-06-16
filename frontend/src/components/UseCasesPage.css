@@ -1,0 +1,45 @@
+.use-cases-page {
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+    text-align: center;
+  }
+  
+  .use-cases-page h1 {
+    font-size: 2.5em;
+    color: #2c2c4d;
+    margin-bottom: 40px;
+  }
+  
+  .use-case-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .use-case-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  
+  .use-case-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .use-case-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .use-case-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+  }

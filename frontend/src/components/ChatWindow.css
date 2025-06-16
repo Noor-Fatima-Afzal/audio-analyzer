@@ -1,0 +1,104 @@
+/* ChatWindow.css */
+
+.chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 5;
+  font-family: 'Arial', sans-serif; /* Keep font consistent */
+}
+
+.chat-window h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.chat-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  max-width: 80%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.chat-message.user {
+  background-color: #e1ffc7;
+  align-self: flex-end;
+}
+
+.chat-message.bot {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+/* Input Box and Send Button Styling */
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add space between input and button */
+  padding-top: 10px;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 30px; /* Sleek rounded edges */
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow inside */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Input box focus effect */
+.chat-input:focus {
+  border-color: #007bff; /* Blue outline on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+.send-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Circular button */
+  width: 50px; /* Fixed size for circle button */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; /* Adjust icon size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Adjust font size for icon */
+.send-button i {
+  font-size: 1.2rem; /* Adjust as needed */
+}
+
+/* Send button hover effect */
+.send-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Slight grow effect */
+}
